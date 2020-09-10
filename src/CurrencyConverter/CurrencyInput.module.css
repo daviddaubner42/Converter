@@ -1,0 +1,48 @@
+.CurrencyInput {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 150px;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  .CurrencyInput {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .CurrencyInput {
+    margin: 0;
+  }
+}
+
+.CurrencyInput h3 {
+  margin-top: 10px;
+}
+
+.Flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 0 0 20px;
+  border-radius: 10%;
+  border: 1px solid #eee;
+  box-shadow: 2px 2px 3px #ccc;
+  /* width: 20%; */
+}
+
+.Field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
