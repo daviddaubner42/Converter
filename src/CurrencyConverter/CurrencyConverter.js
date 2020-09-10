@@ -141,6 +141,7 @@ class CurrencyConverter extends Component {
               onFocus={this.handleFocus}
               image={'./flags/' + this.state.currencies['right'] + '.jpg'}
               currencies={currencies}
+              left={false}
               onSelect={(e) => this.handleSelect(e, 'right')}
               symbol={this.state.currencies['right']} />
           </div>;

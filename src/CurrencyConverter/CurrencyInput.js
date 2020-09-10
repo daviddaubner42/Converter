@@ -16,7 +16,8 @@ const currencyInput = (props) => {
     </div>;
   const flag = <img className={modules.Flag} src={props.image} alt='flag' />;
   const res = [];
-  if (!props.left || window.matchMedia("(max-width: 1000px)")) {
+  let query = window.matchMedia("(max-width: 1000px)");
+  if (!props.left || query.matches) {
     res.push(<div className={modules.CurrencyInput}>{field}{flag}</div>);
   } else {
     res.push(<div className={modules.CurrencyInput}>{flag}{field}</div>);
