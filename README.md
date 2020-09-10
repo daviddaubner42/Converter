@@ -1,5 +1,6 @@
 ## Currency Converter App
 A simple React app that calculates currency conversion at the current rate using the https://exchangeratesapi.io/ API.
+
 Deployed using Vercel at https://converter-chi.vercel.app/.
 
 
