@@ -111,12 +111,12 @@ class CurrencyConverter extends Component {
     this.updateRatesTimer = setInterval(() => {
       axios
         .get(
-          "http://api.exchangeratesapi.io/v1/latest?access_key=99f9cc5a9f36228d3c8c57ac75bf7000&base=EUR"
+          "https://openexchangerates.org/api/latest.json?app_id=7e6881e0e06844f0b5f56ea25e0f01fb"
         )
         .then((response) => {
           console.log(response.data);
           this.setState({
-            rates: { ...response.data.rates, EUR: 1 },
+            rates: { ...response.data.rates, USD: 1 },
             loading: false,
           });
         });
